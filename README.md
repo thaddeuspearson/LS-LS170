@@ -9,5 +9,7 @@ Repository for working through Launch School's LS170 Course
 
 2. [OSI Model](https://en.wikipedia.org/wiki/OSI_model)
 
+3. [Internet Protocol Suite](https://en.wikipedia.org/wiki/Internet_protocol_suite)
+
 ## :clipboard: Notes
 - 
