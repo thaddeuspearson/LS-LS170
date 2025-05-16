@@ -11,5 +11,7 @@ Repository for working through Launch School's LS170 Course
 
 3. [Internet Protocol Suite](https://en.wikipedia.org/wiki/Internet_protocol_suite)
 
+4. [Wires, Cables, and Wifi](https://www.khanacademy.org/computing/code-org/computers-and-the-internet/internet-works/v/the-internet-wires-cables-and-wifi)
+
 ## :clipboard: Notes
 - 
