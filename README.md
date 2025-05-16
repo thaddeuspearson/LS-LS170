@@ -7,5 +7,7 @@ Repository for working through Launch School's LS170 Course
 ## :memo: Articles
 1. [What is the Internet?](https://www.youtube.com/watch?v=Dxcc6ycZ73M)
 
+2. [OSI Model](https://en.wikipedia.org/wiki/OSI_model)
+
 ## :clipboard: Notes
 - 
