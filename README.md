@@ -15,5 +15,7 @@ Repository for working through Launch School's LS170 Course
 
 5. [IEEE Standards](https://standards.ieee.org/ieee/802.3/7071/)
 
+6. [Github Spaces Documentation](https://docs.github.com/en/codespaces)
+
 ## :clipboard: Notes
 - 
