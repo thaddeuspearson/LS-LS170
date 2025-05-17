@@ -19,5 +19,7 @@ Repository for working through Launch School's LS170 Course
 
 7. [IP Addresses and DNS](https://www.khanacademy.org/partner-content/code-org/internet-works/v/the-internet-ip-addresses-and-dns)
 
+8. [Packets, Routers, and Reliability](https://www.khanacademy.org/computing/code-org/computers-and-the-internet/internet-works/v/the-internet-packet-routers-and-reliability)
+
 ## :clipboard: Notes
 - 
