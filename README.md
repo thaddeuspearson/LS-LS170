@@ -17,5 +17,7 @@ Repository for working through Launch School's LS170 Course
 
 6. [Github Spaces Documentation](https://docs.github.com/en/codespaces)
 
+7. [IP Addresses and DNS](https://www.khanacademy.org/partner-content/code-org/internet-works/v/the-internet-ip-addresses-and-dns)
+
 ## :clipboard: Notes
 - 
