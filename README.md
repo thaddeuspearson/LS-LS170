@@ -23,5 +23,7 @@ Repository for working through Launch School's LS170 Course
 
 9. [Selective Repeat Interactive Tool](https://www.tkn.tu-berlin.de/teaching/rn/animations/gbn_sr/)
 
+10. [Hypertext](https://en.wikipedia.org/wiki/Hypertext)
+
 ## :clipboard: Notes
 - 
