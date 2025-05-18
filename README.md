@@ -23,5 +23,7 @@ Repository for working through Launch School's LS170 Course
 
 1. [Hypertext](https://en.wikipedia.org/wiki/Hypertext)
 
+1. [Difference Between URL and URI](https://danielmiessler.com/blog/difference-between-uri-url)
+
 ## :clipboard: Notes
 - [Github Spaces Documentation](https://docs.github.com/en/codespaces)
