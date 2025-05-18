@@ -21,5 +21,7 @@ Repository for working through Launch School's LS170 Course
 
 8. [Packets, Routers, and Reliability](https://www.khanacademy.org/computing/code-org/computers-and-the-internet/internet-works/v/the-internet-packet-routers-and-reliability)
 
+9. [Selective Repeat Interactive Tool](https://www.tkn.tu-berlin.de/teaching/rn/animations/gbn_sr/)
+
 ## :clipboard: Notes
 - 
