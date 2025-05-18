@@ -7,23 +7,21 @@ Repository for working through Launch School's LS170 Course
 ## :memo: Articles
 1. [What is the Internet?](https://www.youtube.com/watch?v=Dxcc6ycZ73M)
 
-2. [OSI Model](https://en.wikipedia.org/wiki/OSI_model)
+1. [OSI Model](https://en.wikipedia.org/wiki/OSI_model)
 
-3. [Internet Protocol Suite](https://en.wikipedia.org/wiki/Internet_protocol_suite)
+1. [Internet Protocol Suite](https://en.wikipedia.org/wiki/Internet_protocol_suite)
 
-4. [Wires, Cables, and Wifi](https://www.khanacademy.org/computing/code-org/computers-and-the-internet/internet-works/v/the-internet-wires-cables-and-wifi)
+1. [Wires, Cables, and Wifi](https://www.khanacademy.org/computing/code-org/computers-and-the-internet/internet-works/v/the-internet-wires-cables-and-wifi)
 
-5. [IEEE Standards](https://standards.ieee.org/ieee/802.3/7071/)
+1. [IEEE Standards](https://standards.ieee.org/ieee/802.3/7071/)
 
-6. [Github Spaces Documentation](https://docs.github.com/en/codespaces)
+1. [IP Addresses and DNS](https://www.khanacademy.org/partner-content/code-org/internet-works/v/the-internet-ip-addresses-and-dns)
 
-7. [IP Addresses and DNS](https://www.khanacademy.org/partner-content/code-org/internet-works/v/the-internet-ip-addresses-and-dns)
+1. [Packets, Routers, and Reliability](https://www.khanacademy.org/computing/code-org/computers-and-the-internet/internet-works/v/the-internet-packet-routers-and-reliability)
 
-8. [Packets, Routers, and Reliability](https://www.khanacademy.org/computing/code-org/computers-and-the-internet/internet-works/v/the-internet-packet-routers-and-reliability)
+1. [Selective Repeat Interactive Tool](https://www.tkn.tu-berlin.de/teaching/rn/animations/gbn_sr/)
 
-9. [Selective Repeat Interactive Tool](https://www.tkn.tu-berlin.de/teaching/rn/animations/gbn_sr/)
-
-10. [Hypertext](https://en.wikipedia.org/wiki/Hypertext)
+1. [Hypertext](https://en.wikipedia.org/wiki/Hypertext)
 
 ## :clipboard: Notes
-- 
+- [Github Spaces Documentation](https://docs.github.com/en/codespaces)
