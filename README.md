@@ -25,5 +25,7 @@ Repository for working through Launch School's LS170 Course
 
 1. [Difference Between URL and URI](https://danielmiessler.com/blog/difference-between-uri-url)
 
+1. [What is HTTP/3?](https://dev.to/grigorkh/what-is-http3--4pib)
+
 ## :clipboard: Notes
 - [Github Spaces Documentation](https://docs.github.com/en/codespaces)
