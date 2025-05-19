@@ -27,5 +27,7 @@ Repository for working through Launch School's LS170 Course
 
 1. [What is HTTP/3?](https://dev.to/grigorkh/what-is-http3--4pib)
 
+1. [HTTP/3 Explained](https://http3-explained.haxx.se/en/)
+
 ## :clipboard: Notes
 - [Github Spaces Documentation](https://docs.github.com/en/codespaces)
