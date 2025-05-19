@@ -4,6 +4,8 @@ Repository for working through Launch School's LS170 Course
 ## :green_book: Books
 1. [Introduction to HTTP](https://launchschool.com/books/http)
 
+1. [HTTP/3 Explained](https://http3-explained.haxx.se/en/)
+
 ## :memo: Articles
 1. [What is the Internet?](https://www.youtube.com/watch?v=Dxcc6ycZ73M)
 
@@ -26,8 +28,6 @@ Repository for working through Launch School's LS170 Course
 1. [Difference Between URL and URI](https://danielmiessler.com/blog/difference-between-uri-url)
 
 1. [What is HTTP/3?](https://dev.to/grigorkh/what-is-http3--4pib)
-
-1. [HTTP/3 Explained](https://http3-explained.haxx.se/en/)
 
 ## :clipboard: Notes
 - [Github Spaces Documentation](https://docs.github.com/en/codespaces)
