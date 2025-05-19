@@ -3,18 +3,32 @@
 function server () {
   while true
   do
-    read method path version
+    message_arr=()
+    check=true
+    while $check
+    do
+      read line
+      message_arr+=($line)
+      if [[ "${#line}" -eq 1 ]]
+      then
+        check=false
+      fi
+    done
+    method=${message_arr[0]}
+    path=${message_arr[1]}
     if [[ $method = 'GET' ]]
     then
-        if [[ -e "./www/${path}" ]]
+        if [[ -f "./www/${path}" ]]
         then
-            echo -e "HTTP/1.1 200 OK\r\n\r\n"
-            cat "./www/${path}"
+            echo -e "HTTP/1.1 200 OK\r\nContent-Type:text/html; charset=utf-8\r\nContent_Length: $(wc -c < './www/'$path)\r\n"
+            cat "./www/$path"
         else
-            echo -e "HTTP/1.1 404 Not Found\r\n\r\n"
+            echo -e "HTTP/1.1 404 Not Found"
+            echo -e "Content-Length 0"
         fi
     else
         echo -e "HTTP/1.1 400 Bad Request"
+        echo -e "Content-Length 0\r\n"
     fi
   done
 }
