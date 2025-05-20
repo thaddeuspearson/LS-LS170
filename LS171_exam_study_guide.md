@@ -75,15 +75,37 @@
 
 #### 1. Have a clear understanding of the TCP and UDP protocols, their similarities and differences:
 
-- 
+- **TCP**
+    - connection-oriented
+    - begins with the three-way handshake
+    - guarentees in-order delivery, provides deduplication
+    - has mechanisms to help make the transmission more efficient _(flow-control/congestion avoidance)_
+    - much more overhead
+- **UDP**
+    - connectionless
+    - no guarentees on delivery or order
+    - much less overhead
+    - great for streaming, VoIP, games etc...
 
 #### Have a broad understanding of the three-way handshake and its purpose:
 
-- 
+- Three-way Handshake:
+    - Client -> Server: `SYN`
+    - Server -> Client: `SYN-ACK`
+    - Client -> Server: `ACK`
+
+- Establishes the TCP session for communication between the client and the server
 
 #### Have a broad understanding of flow control and congestion avoidance:
 
-- 
+- **flow-control**: 
+    - mechanism to keep from overwhelming the receiver
+    - works by modifying the `WINDOW` field in the TCP Segment headers
+    - a lower amount means to send less data
+
+- **congestion avoidance**: 
+    - mechanism to reduce network congestion
+    - if many retransmissions occur, TCP can scale back the window size from the sender
 
 ## III. [URLs](https://launchschool.com/lessons/cc97deb5/assignments/a28ccb6f)
 
