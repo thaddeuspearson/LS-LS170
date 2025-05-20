@@ -222,15 +222,46 @@ Example:
 
 #### 4. Understand what is meant by 'state' in the context of the web, and be able to explain some techniques that are used to simulate state:
 
-- 
+- Sessions and Cookies:
+    1.  When a user first visits a website, the server generates a unique session ID
+    
+    1.  The server sends this session ID to the browser in a ​set-cookie​ header
+    
+    1.  The browser stores this cookie containing the session ID
+    
+    1.  For all subsequent requests, the browser automatically includes this cookie in the request headers
+    
+    1.  The server uses the session ID to look up the associated session data
+
+- AJAX:
+    1. SImulate a stateful experience, as only parts of the html content can be updated with asyncronous javascript calls
+
+    1. Ex: Google's autocomplete suggestions while typing into the searchbar
 
 #### 5. Explain the difference between GET and POST, and know when to choose each:
 
-- 
+- `GET`:
+    1. A request from the client to the server to send a resource. Typically no body is sent, only headers.
+
+    1. Use a `GET` request when trying to read data retrieved by the server, and no changes are meant to be made on the server
+
+- `POST`:
+    1. A request form the client to the server to send _(or write)_ data. Includes the data in the body of the request, in addition to any required Headers.
+
+    1. Use a `POST` to write data to the server (ex: a review on a product), when changes are desired on or by the server
 
 #### 6. Have a basic understanding of the asynchronous nature of AJAX, and the kinds of features that it enables for web apps:
 
-- 
+- Asynchronous requests handled by callbacks that can update the DOM of a webpage without refreshing
+
+- Provides a stateful experience with stateless HTTP, as only parts of the page that need to be changed are updated
+
+- Increases loading performance, and provides a dynamic experience for the end user
+
+- Features enabled by AJAX include:
+   - Information popups on hover
+   - Form validation without page reloads
+   - Infinite scrolling content
 
 <br>
 
@@ -238,8 +269,35 @@ Example:
 
 #### 1. Have an understanding of various security risks that can affect HTTP, and be able to outline measures that can be used to mitigate against these risks:
 
-- 
+- HTTP is unencrypted be defaul:. TLS is the primary mitigation for this
+
+- Session Hijacking: Session Timers and forcing new logins after the same cookie is used with a differernt client
+
+- XSS: Sanitize all user input is the main mitigation for this
+
+- Same-Origin Policy: Enabling CORS and Same-Origin policies can help mitigate this
 
 #### 2. Be aware of the different services that TLS can provide, and have a broad understanding of each of those services:
 
-- 
+##### TLS Security:
+
+- Encryption:
+    1. Generates a symmetric key using asymmetric encryption
+    1. Uses the generated key moving forward for efficient encrypted communication
+
+- Digital Signatures:
+    1.  The server creates a signature by encrypting specific data with its private key
+    1.  The server sends this signature along with the original unencrypted data
+    1.  The client decrypts the signature using the server's public key
+    1.  If the decrypted signature matches the original data, it proves the sender possesses the private key
+
+- Proving Authenticity of a Website via the chain-of-trust:
+    1. CA determines how a party requesting a certificate will validate themselves
+    1. CA signs the certificate of the website, and includes the unencrypted data
+    1. The browser uses the CAs public key to decrypt the signature, and verify it matches the unencrypted content
+    1. The Root CAs sidn the Intermediate CAs certificates, and also sign their own
+
+- Integrity of Segments with MACs (Message Authentication Codes)
+    1. The sender creates a digest of the plaintext message with the pre-agreed hash value using a hashing algorithm and sends this as the MAC
+    1. The receiver uses the same hashing algorithm to check the decrypted message to see if it matches the MAC
+    1. Since only the two parties protected by TLS know the pre-agreed hash value, this guarentees that the message has not been tampered with if the MAC matches
