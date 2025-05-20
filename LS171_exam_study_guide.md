@@ -111,16 +111,30 @@
 
 #### 1. Be able to identify the components of a URL, including query strings:
 
-- 
+Example:
+- `http://www.example.com:1337/home?query=string`
+
+    | scheme | host | port | path | query parameters(s) |
+    |--------|------|------|------|-----------------|
+    | `http` | `www.example.com` | `1337` | `/home` | `query=string` |
     
+
+- scheme comes before `://`, identifies the protocol to use
+- host comes after `://`, identifies the domain name to go to
+- port comes after `:`, identifies the TCP/UDP port to use
+- path comes after `/`, identifies where the resource is located
+- query parameters start with `?` and are tied to gether with `&`
+
 #### 2. Be able to construct a valid URL:
 
-- 
+- see example above
 
 #### 3. Have an understanding of what URL encoding is and when it might be used:
-
-- 
-
+- URL encoding replaces non-conforming characters with a % symbol followed by two hexadecimal digits representing the character's UTF-8 code.
+- used to ensure special characters are not mistaken for syntax. Common examples are:
+    - `%20` or `+` is ` ` _(space)_
+    - `%24` is `$`
+    - `%26` is `&`
 
 <br>
 
