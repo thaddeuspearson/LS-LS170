@@ -5,27 +5,68 @@
 
 #### 1. Have a broad understanding of what the internet is and how it works:
 
-- 
+- a network of networks
+
+- example:
+    > Computer -> Switch _(LAN)_ -> Router -> ... -> Router -> Switch _(LAN)_ -> Computer
 
 #### 2. Understand the characteristics of the physical network, such as latency and bandwidth:
 
-- 
+- bits _(1s and 0s)_ transported through a medium _(copper, fiber, radio, etc)_
+
+- **latency**: a measure of the time it takes for some data to get from one point in a network to another point in a network, a measure of delay
+
+- **bandwidth**: the amount of data that can be sent in a particular unit of time (typically, a second)
+
+- Total latency is the sum of the following delays _(in milleseconds)_:
+    | Delay Type | Definition | Car Analogy |
+    |------------|------------|-------------|
+    | **Propogation** | the time a message takes to go from sender to receiver through every medium along the route; a ratio between distance and speed | a car driving along every distinct road from point A to point B |
+    | **Transmission Delay** | the time it takes a message to be pushed onto a link | the time the car takes to go through an intersection and get to the next road |
+    | **Processing** | the time it takes a message to be handled at each network device along the route | a car going though a checkpoint at each intersection |
+    | **Queuing** | the time a message is waiting _(buffering)_ before it is processed | a car waiting in line to go through the intersection checkpoint |
 
 #### 3. Have a basic understanding of how lower level protocols operate:
 
-- 
+- Each layer of the internet has it's own protocols, and the data from the previous layer is encapsulated in the protocol data unit of the layer beneath it:
+
+    | Layer | PDU | Protocol | Office Analogy |
+    |-------|-----|----------|----------------|
+    | Physical | 0s and 1s | Electricity/Light/Radio | the road between offices |
+    | Data Link | Ethernet Frame | Ethernet/WiFi | the physical office building |
+    | Network | Packet | IP(v4/v6)/ICMP/ARP | the address of the company in the office building |
+    | Transport | Segment/Datagram | TCP/UDP | the room in the company office |
+    | Application | Application Data | HTTP(S)/SMTP/FTP/DNS... | the product delivereed to the person in the company |
 
 #### 4. Know what an IP address is and what a port number is:
 
-- 
+- **IPv4**: 0.0.0.0 - 255.255.255.255 _(2^32 possibilities)_
+
+- **IPv6**: 2001:0db8:85a3:0000:0000:8a2e:0370:7334 _(2^128 possibilities)_
+
+- **Port Numbers**:
+    - 65535 total ports (on both TCP and UDP)
+    - `0 -> 1023` are "well-known"
+    - `1024 -> 49151` are "reserved"
+    - `49152 -> 65535` are "ephemeral"
 
 #### 5. Have an understanding of how DNS works:
 
-- 
+- **DNS** maps domain names to IP addresses
 
-#### 6. Understand the client-server model of web interactions, and the role of HTTP as a protocol within that model:
+- Utilizes a recursive DNS lookup:
+    - local resolver _(usually ISP)_
+    - root nameserver _(13 of them)_
+    - TLD nameserver _(.com, .net, .gov)_
+    - Authoratative Nameserver _(find it with `dig`)_
+
+#### 6. Understand the [client-server](https://launchschool.com/books/http/read/background#clientsandserver) model of web interactions, and the role of HTTP as a protocol within that model:
  
-- 
+- client issues requests
+
+- server responds to client requests
+
+- HTTP is a protocol that can be used in the client/server model. The client can use a method (GET, POST, DELETE, PUT...) and sent this along ith optional headers and/or body. The Server then processes the given request and responds accordingly.
 
 <br>
 
