@@ -142,15 +142,83 @@ Example:
 
 #### 1. Be able to explain what HTTP requests and responses are, and identify the components of each:
 
-- 
+##### HTTP Request Components
+
+1.  ​**Required**:
+    - ​HTTP Method​ (GET, POST, PUT, DELETE, etc.) - Specifies the action to be performed
+    
+    - ​Path​ _(or request-URI)_ - The resource location on the server
+    
+    - ​HTTP Version​ _(since HTTP 1.0)_ - ex: HTTP/1.1
+    
+    - Host Header​ _(required since HTTP 1.1)_ - Specifies the domain name
+
+1.  **​Optional**:
+    - ​Headers​ - Additional metadata about the request _(Accept-Language, User-Agent, etc.)_
+    
+    - ​Query Parameters​ - Additional data appended to the URL after a question mark (`?`)
+    
+    - ​Message Body​ - Content sent to the server _(primarily with POST requests)_
+
+##### HTTP Response Components
+
+1.  **​Required**:
+    - ​Status Line​ - Contains the HTTP version, status code, and reason phrase
+    
+    - Status Code​ _(ex: 200, 404, 500)_ - Indicates the result of the request
+
+2.  **​Optional**:
+    - ​Headers​ - Additional metadata about the response _(Content-Type, Server, etc.)_
+    
+    - ​Message Body​ - The actual content being returned _(HTML, JSON, etc.)_
+
+###### **HTTP Request Methods**
+
+| Method | Description |
+|--------|-------------|
+| GET | Retrieves data from the server. Should not have any effect on the data. |
+| POST | Submits data to be processed by the resource identified by the URL. Often used when creating a new resource. |
+| PUT | Updates a resource or creates it if it doesn't exist. Replaces the entire resource.|
+| DELETE  | Removes the specified resource. |
 
 #### 2. Be able to describe the HTTP request/response cycle:
 
-- 
+- Client send a request to the server, and provides the required headers and any optional headers necessary to complete the request
+
+- Server processes the request with an appropriate response HTTP status code,
 
 #### 3. Be able to explain what status codes are, and provide examples of different status code types:
 
-- 
+- method for the server to respond to an HTTP request and categorize it appropriately
+
+##### **HTTP Response Status Codes**
+| Status Code Range | Category | Description |
+| ----------------- | -------- | ----------- |
+| 100-199 | Informational | Request received, continuing process |
+| 200-299 | Success | Request successfully received, understood, and accepted |
+| 300-399 | Redirection | Further action needs to be taken to complete the request |
+| 400-499 | Client Error  | Request contains bad syntax or cannot be fulfilled |
+| 500-599 | Server Error | Server failed to fulfill a valid request |
+
+<br>
+
+##### **Common HTTP Status Codes**
+| Status Code | Status Text | Meaning |
+|-------------|-------------|---------|
+| 200 | OK | The request was handled successfully. |
+| 201 | Created | The request was successful and a resource was created. |
+| 204 | No Content | The request was successful but no content is returned. |
+| 301 | Moved Permanently | The requested resource has been permanently moved. |
+| 302 | Found | The requested resource has changed temporarily. Usually results in a redirect. |
+| 304 | Not Modified | Resource hasn't been modified since last request. |
+| 400 | Bad Request | The server couldn't understand the request due to invalid syntax. |
+| 401 | Unauthorized | Authentication is required and has failed or not been provided. |
+| 403 | Forbidden | The client doesn't have permission to access the resource. |
+| 404 | Not Found | The requested resource cannot be found. |
+| 405 | Method Not Allowed | The request method is not supported for the requested resource. |
+| 500 | Internal Server Error | The server has encountered a generic error. |
+| 502 | Bad Gateway | The server was acting as a gateway and received an invalid response. |
+| 503 | Service Unavailable | The server is not ready to handle the request. |
 
 #### 4. Understand what is meant by 'state' in the context of the web, and be able to explain some techniques that are used to simulate state:
 
