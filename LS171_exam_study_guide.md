@@ -1,7 +1,7 @@
 # LS171 Exam Study Guide
 
 
-### I. [The Internet]()
+## I. [The Internet](https://launchschool.com/lessons/4af196b9/assignments)
 
 #### 1. Have a broad understanding of what the internet is and how it works:
 
@@ -29,8 +29,7 @@
 
 <br>
 
----
-### II. [TCP & UDP]()
+## II. [TCP & UDP](https://launchschool.com/lessons/2a6c7439/assignments)
 
 
 #### 1. Have a clear understanding of the TCP and UDP protocols, their similarities and differences:
@@ -45,7 +44,7 @@
 
 - 
 
-## III. [URLs]()
+## III. [URLs](https://launchschool.com/lessons/cc97deb5/assignments/a28ccb6f)
 
 #### 1. Be able to identify the components of a URL, including query strings:
 
@@ -62,8 +61,7 @@
 
 <br>
 
----
-### IV. [HTTP and the Request/Response Cycle]()
+## IV. [HTTP and the Request/Response Cycle](https://launchschool.com/lessons/cc97deb5/assignments/83ae67aa)
 
 #### 1. Be able to explain what HTTP requests and responses are, and identify the components of each:
 
@@ -91,8 +89,7 @@
 
 <br>
 
----
-### V. [Security]()
+## V. [Security](https://launchschool.com/lessons/74f1325b/assignments)
 
 #### 1. Have an understanding of various security risks that can affect HTTP, and be able to outline measures that can be used to mitigate against these risks:
 
@@ -101,6 +98,3 @@
 #### 2. Be aware of the different services that TLS can provide, and have a broad understanding of each of those services:
 
 - 
-
-
-
