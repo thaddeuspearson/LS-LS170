@@ -16,7 +16,7 @@
 
 - **latency**: a measure of the time it takes for some data to get from one point in a network to another point in a network, a measure of delay
 
-- **bandwidth**: the amount of data that can be sent in a particular unit of time (typically, a second)
+- **bandwidth**: the amount of data that can be sent in a particular unit of time _(typically, a second)_
 
 - Total latency is the sum of the following delays _(in milleseconds)_:
     | Delay Type | Definition | Car Analogy |
@@ -183,7 +183,7 @@ Example:
 
 #### 2. Be able to describe the HTTP request/response cycle:
 
-- Client send a request to the server, and provides the required headers and any optional headers necessary to complete the request
+- Client sends a request to the server, and provides the required headers and any optional headers necessary to complete the request
 
 - Server processes the request with an appropriate response HTTP status code,
 
@@ -269,7 +269,7 @@ Example:
 
 #### 1. Have an understanding of various security risks that can affect HTTP, and be able to outline measures that can be used to mitigate against these risks:
 
-- HTTP is unencrypted be defaul:. TLS is the primary mitigation for this
+- HTTP is unencrypted by default. TLS is the primary mitigation for this
 
 - Session Hijacking: Session Timers and forcing new logins after the same cookie is used with a differernt client
 
