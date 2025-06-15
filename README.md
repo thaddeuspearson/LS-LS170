@@ -1,4 +1,4 @@
-# LS-LS170 - More Python Foundations
+# LS-LS170 - Networking Foundations
 Repository for working through Launch School's LS170 Course
 
 ## :green_book: Books
